@@ -118,8 +118,9 @@ const LandingPage = () => {
           transition={{ delay: 0.1 }}
           className="text-center mb-8"
         >
-          <h1 className="text-3xl font-black tracking-tight text-[#facc15] mb-2 flex items-center justify-center gap-2 uppercase italic">
-            <Zap className="w-6 h-6 fill-current" /> Commodity King Rahul
+          <h1 className="text-3xl font-black tracking-tight text-[#facc15] mb-2 flex flex-wrap items-center justify-center gap-2 uppercase italic">
+            <Zap className="w-6 h-6 fill-current" />{" "}
+            <span>Commodity King Rahul</span>
           </h1>
           <div className="mt-4 flex items-center justify-center gap-2 text-yellow-100/80 text-xl font-medium">
             <Users className="w-5 h-5 text-yellow-500" />
@@ -157,11 +158,11 @@ const LandingPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 * i }}
               whileHover={{ y: -5 }}
-              className={`relative group bg-[#0c0c0c] border-[2px] ${stat.borderColor} p-5 rounded-2xl text-center shadow-2xl overflow-hidden`}
+              className={`relative group bg-[#0c0c0c] border-[2px] ${stat.borderColor} p-3 sm:p-5 rounded-2xl text-center shadow-2xl overflow-hidden`}
             >
               <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div
-                className={`text-[22px] font-black mb-1.5 transition-all duration-300 ${stat.color} group-hover:scale-110`}
+                className={`text-[18px] sm:text-[22px] font-black mb-1.5 transition-all duration-300 ${stat.color} group-hover:scale-110`}
                 style={{ filter: `drop-shadow(0 0 6px ${stat.glowColor})` }}
               >
                 {stat.value}
